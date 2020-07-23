@@ -83,7 +83,8 @@ class Contact extends Component {
                                         }} />
                                 </Col>
                             </Row>
-                            <Row className="form-group">                                <Label htmlfor="lastname" md={2}>Last Name</Label>
+                            <Row className="form-group">
+                                <Label htmlfor="lastname" md={2}>Last Name</Label>
                                 <Col md={10}>
                                     <Control.text model=".lastname" id="lastname" name="lastname" placeholder="Last Name"
                                         className="form-control"
