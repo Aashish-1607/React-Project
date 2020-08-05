@@ -14,7 +14,7 @@ function RenderDish({ dish }) {
         <div className="col-12 col-md-5 m-1">
             <FadeTransform in
                 transformProps={{
-                    exitTransform: 'scale(0.5' translateY(- 50 %)
+                    exitTransform: 'scale(0.5) translateY(- 50 %)'
             }}>
             <Card>
                 <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name} />
@@ -58,8 +58,8 @@ class CommentForm extends Component {
             <div>
                 <Button outline onClick={this.toggleModal}>
                     <span className="fa fa-edit fa-lg"></span>
-                Submit Comment
-            </Button>
+                    Submit Comment
+                </Button>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal} >
                     <ModalHeader toggle={this.toggleModal} >Submit Comment</ModalHeader>
                     <ModalBody>
